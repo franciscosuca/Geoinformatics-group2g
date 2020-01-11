@@ -1,0 +1,4 @@
+Stations_id;von_datum;bis_datum;Stationshoehe;geoBreite;geoLaenge;Stationsname;Bundesland
+15190;20180701;20200110;18;51.6802;6.4349;Xanten(Wasserwerk);Nordrhein-Westfalen 
+01672;19740101;19780630;19;51.6833;6.1667;Goch;Nordrhein-Westfalen 
+04279;19890418;20200110;593;50.3046;6.3862;Roth_bei_Prüm;Rheinland-Pfalz  
