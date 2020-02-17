@@ -1,2 +1,0 @@
-Stations_id von_datum bis_datum Stationshoehe geoBreite geoLaenge Stationsname Bundesland
-00001 19370101 19860630 478 47.8413 8.8493 Aach Baden-Württemberg

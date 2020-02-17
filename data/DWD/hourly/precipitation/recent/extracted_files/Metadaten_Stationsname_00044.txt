@@ -1,0 +1,4 @@
+Stations_ID;Stationsname;Von_Datum;Bis_Datum
+    44;Ahlhorn                                 ;19450801;19930630
+    44;Groﬂenkneten-Ahlhorn                    ;19930701;20070331
+    44;Groﬂenkneten                            ;20070401;
