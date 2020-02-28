@@ -52,12 +52,17 @@ def extract_zip_file(inputPath, outputPath, preSelectedStations):
 def clip_files(localDir, localDir_unzip, climatic_var):
     climatic_files = []
     unzip_files = os.listdir(localDir_unzip)
-    for unzip_file in unzip_files:
-        if(unzip_file[0:19] == 'produkt_nieder_tag_'):
-            climatic_files.append(unzip_file)
-    for climatic_file in range (0, len(climatic_files)):
-        if (climatic_var == 'temperature'):
-            kl_txt_to_csv(localDir_unzip + climatic_files[climatic_file], localDir + climatic_files[climatic_file] + '.csv')
-        elif(climatic_var == 'precipitation'):
+    if (climatic_var == 'temperature'):
+        for unzip_file in unzip_files:
+            if(unzip_file[0:18] == 'produkt_klima_tag_'):
+                climatic_files.append(unzip_file)
+        for climatic_file in range (0, len(climatic_files)):
+                kl_txt_to_csv(localDir_unzip + climatic_files[climatic_file], localDir + climatic_files[climatic_file] + '.csv')
+        print('[INFO] Temperature files in csv format generated.')    
+    elif(climatic_var == 'precipitation'):
+        for unzip_file in unzip_files:
+            if(unzip_file[0:19] == 'produkt_nieder_tag_'):
+                climatic_files.append(unzip_file)
+        for climatic_file in range (0, len(climatic_files)):
             rs_txt_to_csv(localDir_unzip + climatic_files[climatic_file], localDir + climatic_files[climatic_file] + '.csv')
-    print('[INFO] Stations files generated.')
+        print('[INFO] Precipitation files in csv format generated.')
