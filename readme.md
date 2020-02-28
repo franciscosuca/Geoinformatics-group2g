@@ -1,5 +1,5 @@
 # Hochschule Rhein-Waal M-IE_2.02 Geoinformatics WS19/20
-## Project: Geoinformatics Final Project
+### Project: Geoinformatics Final Project
 ##### Supervised by Prof. Rolf Becker 
 ##### Group members: Francisco Susana and Erick Rea
 
@@ -22,7 +22,7 @@ Ensure that you have met the following requirements:
 To install the application follow these steps:
 
 * Press the "Clone or download" button of this repository, and then copy the link to clone the repository or click  on "Download ZIP".
-* Open the console from the folder where you download the application, and run the following command:
+* Open the console from the folder where you downloaded the application, and run the following command:
 
     `pip install -r requirements.txt`
 	
