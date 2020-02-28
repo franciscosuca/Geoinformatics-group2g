@@ -13,7 +13,7 @@ def fileDownload(ftp, fileDirName, localDirName):
         localfile = open(localDirName, 'wb')
         ftp.retrbinary('RETR ' + fileDirName, localfile.write, 1024) # Retrieve a file in binary transfer mode.
         localfile.close()
-        print('[FTP SESSION] File donwloaded successfully.')
+        print('[FTP SESSION] File ', fileDirName,' donwloaded successfully.')
     
     except ftplib.error_perm:
         print("[FTP ERROR] Operation not permitted or file not found or not logged in.")

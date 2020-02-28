@@ -1,5 +1,0 @@
-Stations_id;Stationshoehe;Geogr.Breite;Geogr.Laenge;von_datum;bis_datum;Stationsname
-    44;   42.00; 52.8900;  8.2300;19450801;19710228;Groﬂenkneten
-    44;   48.00; 52.8846;  8.2308;19710301;19930630;Groﬂenkneten
-    44;   42.00; 52.9166;  8.2208;19930701;20070331;Groﬂenkneten
-    44;   43.50; 52.9336;  8.2370;20070401;        ;Groﬂenkneten
