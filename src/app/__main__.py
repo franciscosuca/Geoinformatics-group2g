@@ -42,7 +42,7 @@ get_stations_data(ftp, res, dwd_dir + precipitation_stations_dir, local_ps_dir)
 
 # Function to download the zip files of the preselected stations from QGIS analysis
 temperature_preSelectedStations = [555,617,7374,1078,1590,1303,3321,5064,13901,13670]
-precipitation_preSelectedStations = [5733]
+precipitation_preSelectedStations = [5733,1999,5502,14175,14177,1590]
 temperature_files_names = get_zip_files(ftp, res, dwd_dir + temperature_dir, local_t_dir,temperature_preSelectedStations)
 precipitation_files_names = get_zip_files(ftp, res, dwd_dir + precipitation_dir, local_p_dir,precipitation_preSelectedStations)
 
