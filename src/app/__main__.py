@@ -25,7 +25,7 @@ local_ps_dir = "data/DWD/" + precipitation_stations_dir + "stations/"
 local_t_e_dir = "data/DWD/" + temperature_dir + "unzip_files/"                             
 local_p_e_dir = "data/DWD/" + precipitation_dir + "unzip_files/"
 
-print('[INFO] Starting program...')
+print('[INFO] Executing 1st script...')
 
 # Create the local directories
 os.makedirs(local_t_dir,exist_ok = True)                               
@@ -39,6 +39,8 @@ ftp, res = initFtpConn(server, usr, pwd)
 # Function to obtain temperature & precipitation data from stations that belongs to the NRW
 get_stations_data(ftp, res, dwd_dir + temperature_stations_dir, local_ts_dir)
 get_stations_data(ftp, res, dwd_dir + precipitation_stations_dir, local_ps_dir)
+
+print('[INFO] Executing 2nd script...')
 
 # Function to download the zip files of the preselected stations from QGIS analysis
 temperature_preSelectedStations = [555,617,7374,1078,1590,1303,3321,5064,13901,13670]
